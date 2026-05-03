@@ -1,0 +1,275 @@
+{
+	"untap": {
+		"name": "Untap Step",
+		"shortName": "Untap",
+		"description": "You untap all of your permanents (cards on the battlefield). Tap symbols rotate to show a card has been used — this step resets them so they are ready to use again.",
+		"playerActions": [
+			"All your tapped permanents become untapped automatically.",
+			"You do not need to do anything — this step is automatic."
+		],
+		"tips": [
+			"Cards with \"vigilance\" stay untapped when they attack, so they'll still be untapped now.",
+			"Some effects prevent a permanent from untapping — watch out for those."
+		],
+		"priority": "Neither player receives priority during the Untap Step. No spells or abilities can be played here. It happens automatically."
+	},
+	"upkeep": {
+		"name": "Upkeep Step",
+		"shortName": "Upkeep",
+		"description": "Many cards have triggered abilities that say \"at the beginning of your upkeep.\" These abilities trigger now. This is also a common moment to pay ongoing costs.",
+		"playerActions": [
+			"Resolve any \"at the beginning of your upkeep\" triggers.",
+			"Pay any upkeep costs on cards you control (or sacrifice them if you can't).",
+			"Cast instants or activate abilities if you want to."
+		],
+		"tips": [
+			"Read your cards carefully — many have upkeep triggers you might forget.",
+			"Your opponent can also play instants and abilities during your upkeep."
+		],
+		"priority": "Both players receive priority here. You (the active player) get priority first. You and your opponent can cast instants and activate abilities before moving on."
+	},
+	"draw": {
+		"name": "Draw Step",
+		"shortName": "Draw",
+		"description": "You draw one card from the top of your library. On the very first turn of the game, the first player skips this step.",
+		"playerActions": [
+			"Draw one card from the top of your library.",
+			"You may cast instants or activate abilities after drawing."
+		],
+		"tips": [
+			"The first player in a game skips their draw step on turn 1.",
+			"Some effects let you draw additional cards or replace your draw."
+		],
+		"priority": "After you draw, both players get priority. You can cast instants or activate abilities before moving to your main phase."
+	},
+	"main1": {
+		"name": "Pre-Combat Main Phase",
+		"shortName": "Main 1",
+		"description": "Your first main phase — the heart of your turn. You can play a land and cast spells here. Most creatures and sorceries are cast during main phases.",
+		"playerActions": [
+			"Play one land from your hand (you may only do this once per turn).",
+			"Cast creature, sorcery, enchantment, artifact, or planeswalker spells.",
+			"Cast instants and activate abilities.",
+			"Activate planeswalker loyalty abilities."
+		],
+		"tips": [
+			"Only one land per turn — choose wisely if you have multiple options.",
+			"Sorceries and creatures can only be cast during your main phase, when the stack is empty.",
+			"Consider attacking before casting if you want a creature to be a surprise."
+		],
+		"priority": "You have priority as the active player. After each spell you cast, your opponent gets a chance to respond with instants or abilities before the spell resolves."
+	},
+	"begin-combat": {
+		"name": "Beginning of Combat Step",
+		"shortName": "Begin Combat",
+		"description": "Combat is about to begin. This is the last chance for your opponent to remove or tap creatures before you declare attackers.",
+		"playerActions": [
+			"Cast instants or activate abilities.",
+			"Consider whether you want to proceed with attacking."
+		],
+		"tips": [
+			"Your opponent may tap or destroy your creatures here before attackers are declared.",
+			"Effects that trigger \"at the beginning of combat\" go on the stack now."
+		],
+		"priority": "Both players receive priority. Your opponent can use removal spells here to eliminate your attackers before you even get to swing!"
+	},
+	"declare-attackers": {
+		"name": "Declare Attackers Step",
+		"shortName": "Attackers",
+		"description": "You choose which of your creatures will attack and what they are attacking (your opponent directly, or their planeswalkers). Attacking creatures become tapped.",
+		"playerActions": [
+			"Choose any of your untapped creatures to attack with.",
+			"Declare what each attacker is targeting: your opponent or one of their planeswalkers.",
+			"Tap all attacking creatures (unless they have vigilance)."
+		],
+		"tips": [
+			"Creatures with \"summoning sickness\" (entered this turn) cannot attack.",
+			"Vigilance creatures do not tap when they attack — they can still block next turn.",
+			"You don't have to attack if you don't want to."
+		],
+		"priority": "After attackers are declared, both players get priority. Your opponent can now cast instants to kill or pump your attackers before blockers are declared."
+	},
+	"declare-blockers": {
+		"name": "Declare Blockers Step",
+		"shortName": "Blockers",
+		"description": "Your opponent chooses which of their untapped creatures will block your attackers. Multiple creatures can block a single attacker.",
+		"playerActions": [
+			"Wait while your opponent declares their blockers.",
+			"If multiple creatures block one of your attackers, you choose the order they take damage.",
+			"Cast instants or activate abilities in response."
+		],
+		"tips": [
+			"Your opponent does not have to block — they can let attackers through to deal damage directly.",
+			"Creatures with \"flying\" can only be blocked by creatures with flying or reach.",
+			"When multiple creatures block one attacker, you assign the order damage is dealt."
+		],
+		"priority": "After blockers are declared, both players get priority again. This is a common moment for combat tricks — instants that pump power/toughness or grant abilities."
+	},
+	"first-strike-damage": {
+		"name": "First Strike Damage Step",
+		"shortName": "First Strike",
+		"description": "Only exists if a creature with first strike or double strike is in combat. Those creatures deal their damage before other creatures.",
+		"playerActions": [
+			"Creatures with first strike or double strike deal damage now.",
+			"A creature that dies here cannot deal damage in the normal damage step."
+		],
+		"tips": [
+			"This step only happens if a first strike or double strike creature is in combat.",
+			"Creatures with deathtouch and first strike are especially powerful — they kill blockers before those blockers deal damage back."
+		],
+		"priority": "After first strike damage is dealt, both players get priority before the regular damage step. You can cast instants based on what survived."
+	},
+	"combat-damage": {
+		"name": "Combat Damage Step",
+		"shortName": "Damage",
+		"description": "All remaining creatures in combat deal their damage simultaneously. Creatures that take damage equal to or greater than their toughness are destroyed.",
+		"playerActions": [
+			"All creatures in combat deal damage equal to their power simultaneously.",
+			"Creatures with lethal damage are destroyed and go to the graveyard.",
+			"Unblocked attackers deal their damage to the defending player (or planeswalker)."
+		],
+		"tips": [
+			"Damage is dealt simultaneously — both a 2/2 and a 3/3 die when they fight each other.",
+			"\"Trample\" lets excess damage carry over to the defending player even if blocked.",
+			"\"Lifelink\" means your creature's damage also heals you for that amount."
+		],
+		"priority": "After damage is assigned, both players get priority. You can cast instants here — for example, to save a creature with regenerate or a pump spell."
+	},
+	"end-of-combat": {
+		"name": "End of Combat Step",
+		"shortName": "End Combat",
+		"description": "Combat is wrapping up. Effects that last \"until end of combat\" expire. Creatures leave combat.",
+		"playerActions": [
+			"Cast instants or activate abilities.",
+			"Effects that last \"until end of combat\" end here."
+		],
+		"tips": [
+			"A good time to use any abilities that should happen after combat but before your second main phase."
+		],
+		"priority": "Both players have priority here. Last chance to interact before the post-combat main phase."
+	},
+	"main2": {
+		"name": "Post-Combat Main Phase",
+		"shortName": "Main 2",
+		"description": "Your second main phase. Works exactly like the first — you can cast spells and (if you haven't yet) play a land. Use this to follow up after combat.",
+		"playerActions": [
+			"Play a land if you haven't this turn.",
+			"Cast creature, sorcery, enchantment, artifact, or planeswalker spells.",
+			"Cast instants and activate abilities."
+		],
+		"tips": [
+			"Often a good time to play creatures you didn't want to tap before attacking.",
+			"Spend remaining mana here — use it or lose it at end of turn."
+		],
+		"priority": "Same as the first main phase — you have priority, but your opponent can respond to anything you cast with instants and abilities."
+	},
+	"end-step": {
+		"name": "End Step",
+		"shortName": "End Step",
+		"description": "Your turn is almost over. Triggered abilities that say \"at the beginning of your end step\" or \"at end of turn\" trigger now. Your opponent can cast instants.",
+		"playerActions": [
+			"Resolve any \"at end of turn\" or \"at beginning of end step\" triggers.",
+			"Cast instants or activate abilities."
+		],
+		"tips": [
+			"Common triggers: \"at end of turn, sacrifice this creature\" or \"at end of turn, draw a card.\"",
+			"Your opponent may cast instants here — they might be saving up for this moment."
+		],
+		"priority": "Both players receive priority. Your opponent can still cast instants! This is a popular time to cast instants since after your cleanup you'll discard — your opponent might want to act before then."
+	},
+	"cleanup": {
+		"name": "Cleanup Step",
+		"shortName": "Cleanup",
+		"description": "The final step. You discard down to your maximum hand size (usually 7 cards). All damage is removed from creatures. \"Until end of turn\" effects expire.",
+		"playerActions": [
+			"If you have more than 7 cards in hand, discard down to 7.",
+			"All damage is removed from all creatures.",
+			"Effects that last \"until end of turn\" or \"this turn\" expire."
+		],
+		"tips": [
+			"Choose carefully which cards to discard — you can't get them back easily.",
+			"Damage wears off at cleanup — a 2/2 that took 1 damage is fully healed for your opponent's turn."
+		],
+		"priority": "Normally no priority is given here. However, if a triggered ability goes on the stack during cleanup, both players do receive priority to respond before it resolves."
+	},
+	"beginning": {
+		"name": "Beginning Phase",
+		"shortName": "Start",
+		"description": "Your turn begins. First you automatically untap all your permanents. Then you handle any upkeep triggers on your cards. Finally, you draw one card from your library.",
+		"playerActions": [
+			"Untap all your permanents (automatic — you don't need to do anything).",
+			"Resolve any \"at the beginning of your upkeep\" triggers.",
+			"Draw one card from your library."
+		],
+		"tips": [
+			"Read your cards — many have upkeep triggers you might forget.",
+			"The first player skips the draw step on turn 1.",
+			"Your opponent can cast instants during upkeep and after your draw."
+		],
+		"priority": "The Untap Step has no priority — it's automatic. During Upkeep and after your Draw, both players can cast instants and activate abilities. You go first."
+	},
+	"precombat-main": {
+		"name": "Pre-Combat Main Phase",
+		"shortName": "Main 1",
+		"description": "Your first main phase. You can play a land and cast spells. Most players cast their most important spells here before knowing how combat will go.",
+		"playerActions": [
+			"Play one land from your hand (once per turn total, shared with Main 2).",
+			"Cast creatures, sorceries, enchantments, artifacts, and planeswalkers.",
+			"Cast instants and activate abilities."
+		],
+		"tips": [
+			"One land per turn — think carefully about which to play.",
+			"Sorceries can only be cast during your main phase when nothing else is on the stack."
+		],
+		"priority": "You have priority first. After each spell you cast, your opponent gets a chance to respond before it resolves."
+	},
+	"combat": {
+		"name": "Combat Phase",
+		"shortName": "Combat",
+		"description": "Attack with your creatures! Your opponent can choose which of their creatures will block. Creatures deal damage equal to their power. Those with damage equal to or greater than their toughness are destroyed.",
+		"playerActions": [
+			"Choose which untapped creatures to attack with (they become tapped).",
+			"Your opponent chooses how to block your attackers.",
+			"If multiple creatures block one attacker, you decide the damage order.",
+			"Creatures deal damage equal to their power simultaneously."
+		],
+		"tips": [
+			"Creatures that entered the battlefield this turn have summoning sickness — they can't attack.",
+			"Your opponent doesn't have to block — they can take the damage directly.",
+			"Flying creatures can only be blocked by fliers or creatures with reach.",
+			"Trample lets excess damage carry over to the defending player when blocked."
+		],
+		"priority": "Priority is passed multiple times during combat: before attackers are declared, after attackers, after blockers, and after damage. Your opponent can use instants and abilities at each of these moments — watch out for combat tricks!"
+	},
+	"postcombat-main": {
+		"name": "Post-Combat Main Phase",
+		"shortName": "Main 2",
+		"description": "A second main phase after combat. Works exactly like the first. Great for casting creatures you were saving, or spending remaining mana.",
+		"playerActions": [
+			"Play a land if you haven't this turn.",
+			"Cast creatures, sorceries, enchantments, artifacts, and planeswalkers.",
+			"Cast instants and activate abilities."
+		],
+		"tips": [
+			"Good time to play creatures you didn't want tapping before attacking.",
+			"Spend your remaining mana here — unused mana is lost at end of turn."
+		],
+		"priority": "Same as the first main phase — you go first, but your opponent can respond to anything you cast."
+	},
+	"ending": {
+		"name": "Ending Phase",
+		"shortName": "End",
+		"description": "Your turn ends. Resolve any \"at end of turn\" triggers, then discard down to 7 cards if needed. All damage is removed from creatures and \"until end of turn\" effects expire.",
+		"playerActions": [
+			"Resolve \"at end of turn\" triggered abilities.",
+			"Discard down to 7 cards if you have more.",
+			"All damage on creatures is removed (automatic).",
+			"All \"until end of turn\" effects expire (automatic)."
+		],
+		"tips": [
+			"Choose carefully what to discard — consider what your opponent might do on their turn.",
+			"Your opponent can still cast instants during the end step before cleanup."
+		],
+		"priority": "During the End Step, both players can cast instants and use abilities. The Cleanup Step normally has no priority, but can if a triggered ability fires."
+	}
+}

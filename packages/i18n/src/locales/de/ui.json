@@ -1,0 +1,40 @@
+{
+	"nav": {
+		"title": "MTG Guide",
+		"turnGuide": "Zug-Anleitung",
+		"glossary": "Glossar",
+		"guide": "Anleitung"
+	},
+	"guide": {
+		"turn": "Zug {{count}}",
+		"title": "Zugphasen-Anleitung",
+		"subtitle": "Folge deinem Zug Schritt für Schritt.",
+		"simplified": "Vereinfacht",
+		"allSteps": "Alle Schritte",
+		"turnBegins": "Zug {{count}} beginnt",
+		"prev": "← Zurück",
+		"next": "Weiter →",
+		"endTurn": "Zug beenden →",
+		"stepOf": "Schritt {{current}} von {{total}}",
+		"whatToDo": "Was zu tun ist",
+		"tips": "Tipps",
+		"priority": "Priorität & Aktionen des Gegners",
+		"keywords": "Schlüsselwörter"
+	},
+	"glossary": {
+		"reference": "Nachschlagewerk",
+		"title": "Glossar",
+		"subtitle": "{{count}} grundlegende Begriffe erklärt.",
+		"searchPlaceholder": "Begriffe suchen…",
+		"noResults": "Keine Begriffe für \"{{query}}\" gefunden",
+		"rule": "Regel {{ref}}",
+		"seeAlso": "Siehe auch:"
+	},
+	"footer": {
+		"disclaimer": "MTG Guide — Ein Begleiter für neue Spieler. Nicht mit Wizards of the Coast verbunden."
+	},
+	"language": {
+		"de": "DE",
+		"en": "EN"
+	}
+}

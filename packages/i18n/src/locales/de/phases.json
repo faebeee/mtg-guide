@@ -1,0 +1,275 @@
+{
+	"untap": {
+		"name": "Enttappschritt",
+		"shortName": "Enttappen",
+		"description": "Du enttappst alle deine bleibenden Karten (Karten im Spiel). Das Tapp-Symbol dreht eine Karte und zeigt an, dass sie benutzt wurde - dieser Schritt setzt sie zurück, damit sie wieder einsatzbereit sind.",
+		"playerActions": [
+			"Alle deine getappten bleibenden Karten werden automatisch enttappt.",
+			"Du musst nichts tun - dieser Schritt läuft automatisch ab."
+		],
+		"tips": [
+			"Karten mit \"Wachsamkeit\" bleiben beim Angreifen enttappt und sind deshalb nach diesem Schritt weiterhin enttappt.",
+			"Manche Effekte verhindern, dass eine bleibende Karte enttappt wird - achte darauf."
+		],
+		"priority": "Während des Enttappschritts erhält kein Spieler Priorität. Hier können keine Zaubersprüche oder Fähigkeiten gespielt werden. Der Schritt läuft automatisch ab."
+	},
+	"upkeep": {
+		"name": "Verpflichtungsschritt",
+		"shortName": "Verpflichtung",
+		"description": "Viele Karten haben ausgelöste Fähigkeiten mit dem Text \"zu Beginn deines Verpflichtungsschritts\". Diese Fähigkeiten lösen jetzt aus. Außerdem ist dies ein häufiger Moment, um laufende Kosten zu bezahlen.",
+		"playerActions": [
+			"Löse alle \"zu Beginn deines Verpflichtungsschritts\"-Auslöser auf.",
+			"Bezahle alle Unterhaltskosten für Karten unter deiner Kontrolle (oder opfere sie, wenn du es nicht kannst).",
+			"Wirke Spontanzauber oder aktiviere Fähigkeiten, wenn du möchtest."
+		],
+		"tips": [
+			"Lies deine Karten sorgfältig - viele haben Verpflichtungsauslöser, die man leicht vergisst.",
+			"Dein Gegner kann während deines Verpflichtungsschritts ebenfalls Spontanzauber und Fähigkeiten einsetzen."
+		],
+		"priority": "Beide Spieler erhalten hier Priorität. Du (der aktive Spieler) erhältst zuerst Priorität. Du und dein Gegner könnt Spontanzauber wirken und Fähigkeiten aktivieren, bevor es weitergeht."
+	},
+	"draw": {
+		"name": "Ziehschritt",
+		"shortName": "Ziehen",
+		"description": "Du ziehst eine Karte vom oberen Ende deiner Bibliothek. In der allerersten Runde des Spiels überspringt der erste Spieler diesen Schritt.",
+		"playerActions": [
+			"Ziehe eine Karte vom oberen Ende deiner Bibliothek.",
+			"Du kannst nach dem Ziehen Spontanzauber wirken oder Fähigkeiten aktivieren."
+		],
+		"tips": [
+			"Der erste Spieler überspringt in Runde 1 seinen Ziehschritt.",
+			"Manche Effekte erlauben es dir, zusätzliche Karten zu ziehen oder dein Ziehen zu ersetzen."
+		],
+		"priority": "Nachdem du gezogen hast, erhalten beide Spieler Priorität. Du kannst Spontanzauber wirken oder Fähigkeiten aktivieren, bevor du in deine Hauptphase übergehst."
+	},
+	"main1": {
+		"name": "Präkampf-Hauptphase",
+		"shortName": "Hauptphase 1",
+		"description": "Deine erste Hauptphase - das Herzstück deiner Runde. Du kannst ein Land spielen und Zaubersprüche wirken. Die meisten Kreaturen und Hexereien werden während der Hauptphasen gewirkt.",
+		"playerActions": [
+			"Spiele ein Land aus deiner Hand (dies ist nur einmal pro Runde möglich).",
+			"Wirke Kreaturen-, Hexerei-, Verzauberungs-, Artefakt- oder Planeswalker-Zaubersprüche.",
+			"Wirke Spontanzauber und aktiviere Fähigkeiten.",
+			"Aktiviere Loyalitätsfähigkeiten von Planeswalkers."
+		],
+		"tips": [
+			"Nur ein Land pro Runde - wähle weise, wenn du mehrere Optionen hast.",
+			"Hexereien und Kreaturen können nur während deiner Hauptphase gewirkt werden, wenn der Stapel leer ist.",
+			"Überlege, ob du angreifst, bevor du wirkst, wenn du eine Kreatur überraschend einsetzen möchtest."
+		],
+		"priority": "Du hast Priorität als aktiver Spieler. Nach jedem Zauberspruch, den du wirkst, hat dein Gegner die Möglichkeit, mit Spontanzaubern oder Fähigkeiten zu reagieren, bevor der Zauberspruch aufgelöst wird."
+	},
+	"begin-combat": {
+		"name": "Kampfanfangsschritt",
+		"shortName": "Kampfbeginn",
+		"description": "Der Kampf steht kurz bevor. Dies ist die letzte Möglichkeit für deinen Gegner, Kreaturen zu entfernen oder zu tappen, bevor du Angreifer deklarierst.",
+		"playerActions": [
+			"Wirke Spontanzauber oder aktiviere Fähigkeiten.",
+			"Überlege, ob du den Kampf fortsetzen möchtest."
+		],
+		"tips": [
+			"Dein Gegner kann deine Kreaturen hier tappen oder zerstören, bevor Angreifer deklariert werden.",
+			"Effekte, die \"zu Beginn des Kampfes\" auslösen, werden jetzt auf den Stapel gelegt."
+		],
+		"priority": "Beide Spieler erhalten Priorität. Dein Gegner kann hier Entfernungszauber einsetzen, um deine Angreifer zu eliminieren, bevor du überhaupt losschlagen kannst!"
+	},
+	"declare-attackers": {
+		"name": "Angreiferdeklarationsschritt",
+		"shortName": "Angreifer",
+		"description": "Du wählst, welche deiner Kreaturen angreifen und wen sie angreifen (direkt deinen Gegner oder seine Planeswalkers). Angreifende Kreaturen werden getappt.",
+		"playerActions": [
+			"Wähle beliebige deiner enttappten Kreaturen zum Angreifen aus.",
+			"Deklariere, wen jeder Angreifer angreift: deinen Gegner oder einen seiner Planeswalkers.",
+			"Tappe alle angreifenden Kreaturen (sofern sie keine Wachsamkeit haben)."
+		],
+		"tips": [
+			"Kreaturen mit \"Beschworenenerschöpfung\" (die diese Runde ins Spiel gekommen sind) können nicht angreifen.",
+			"Kreaturen mit Wachsamkeit werden beim Angreifen nicht getappt - sie können in der nächsten Runde noch blocken.",
+			"Du musst nicht angreifen, wenn du nicht möchtest."
+		],
+		"priority": "Nachdem die Angreifer deklariert wurden, erhalten beide Spieler Priorität. Dein Gegner kann jetzt Spontanzauber wirken, um deine Angreifer zu töten oder zu stärken, bevor Blocker deklariert werden."
+	},
+	"declare-blockers": {
+		"name": "Blockerdeklarationsschritt",
+		"shortName": "Blocker",
+		"description": "Dein Gegner wählt, welche seiner enttappten Kreaturen deine Angreifer blocken. Mehrere Kreaturen können einen einzigen Angreifer blocken.",
+		"playerActions": [
+			"Warte, während dein Gegner seine Blocker deklariert.",
+			"Wenn mehrere Kreaturen einen deiner Angreifer blocken, wählst du die Reihenfolge, in der sie Schaden erhalten.",
+			"Wirke Spontanzauber oder aktiviere Fähigkeiten als Reaktion."
+		],
+		"tips": [
+			"Dein Gegner muss nicht blocken - er kann Angreifer direkt Schaden verursachen lassen.",
+			"Kreaturen mit \"Fliegen\" können nur von Kreaturen geblockt werden, die ebenfalls Fliegen oder Reichweite haben.",
+			"Wenn mehrere Kreaturen einen Angreifer blocken, legst du die Reihenfolge fest, in der Schaden zugeteilt wird."
+		],
+		"priority": "Nachdem die Blocker deklariert wurden, erhalten beide Spieler erneut Priorität. Dies ist ein häufiger Moment für Kampftricks - Spontanzauber, die Stärke/Widerstandskraft erhöhen oder Fähigkeiten verleihen."
+	},
+	"first-strike-damage": {
+		"name": "Erstschlag-Schadenszuteilungsschritt",
+		"shortName": "Erstschlag",
+		"description": "Dieser Schritt existiert nur, wenn eine Kreatur mit Erstschlag oder Doppelschlag im Kampf ist. Diese Kreaturen teilen ihren Schaden vor anderen Kreaturen zu.",
+		"playerActions": [
+			"Kreaturen mit Erstschlag oder Doppelschlag teilen jetzt Schaden zu.",
+			"Eine Kreatur, die hier stirbt, kann im normalen Schadensschritt keinen Schaden mehr zuteilen."
+		],
+		"tips": [
+			"Dieser Schritt findet nur statt, wenn eine Kreatur mit Erstschlag oder Doppelschlag im Kampf ist.",
+			"Kreaturen mit Todesberührung und Erstschlag sind besonders mächtig - sie töten Blocker, bevor diese zurückschlagen können."
+		],
+		"priority": "Nachdem der Erstschlag-Schaden zugeteilt wurde, erhalten beide Spieler Priorität vor dem normalen Schadensschritt. Du kannst Spontanzauber wirken, je nachdem was überlebt hat."
+	},
+	"combat-damage": {
+		"name": "Kampfschadensschritt",
+		"shortName": "Schaden",
+		"description": "Alle verbleibenden Kreaturen im Kampf teilen ihren Schaden gleichzeitig zu. Kreaturen, die Schaden gleich oder größer ihrer Widerstandskraft erhalten, werden zerstört.",
+		"playerActions": [
+			"Alle Kreaturen im Kampf teilen gleichzeitig Schaden in Höhe ihrer Stärke zu.",
+			"Kreaturen mit tödlichem Schaden werden zerstört und wandern in den Friedhof.",
+			"Ungeblockte Angreifer verursachen ihren Schaden beim verteidigenden Spieler (oder Planeswalker)."
+		],
+		"tips": [
+			"Schaden wird gleichzeitig zugeteilt - sowohl eine 2/2 als auch eine 3/3 sterben, wenn sie gegeneinander kämpfen.",
+			"\"Trampeln\" lässt überschüssigen Schaden auf den verteidigenden Spieler übertragen, auch wenn die Kreatur geblockt wurde.",
+			"\"Lebensband\" bedeutet, dass der Schaden deiner Kreatur dich gleichzeitig um diesen Betrag heilt."
+		],
+		"priority": "Nachdem Schaden zugeteilt wurde, erhalten beide Spieler Priorität. Du kannst Spontanzauber wirken - zum Beispiel, um eine Kreatur mit Regenerieren oder einem Verstärkungszauber zu retten."
+	},
+	"end-of-combat": {
+		"name": "Kampfendeschritt",
+		"shortName": "Kampfende",
+		"description": "Der Kampf neigt sich dem Ende zu. Effekte, die \"bis zum Ende des Kampfes\" andauern, laufen ab. Kreaturen verlassen den Kampf.",
+		"playerActions": [
+			"Wirke Spontanzauber oder aktiviere Fähigkeiten.",
+			"Effekte, die \"bis zum Ende des Kampfes\" andauern, enden hier."
+		],
+		"tips": [
+			"Ein guter Zeitpunkt, um Fähigkeiten zu nutzen, die nach dem Kampf, aber vor deiner zweiten Hauptphase stattfinden sollten."
+		],
+		"priority": "Beide Spieler haben Priorität. Letzte Chance zur Interaktion vor der Postkampf-Hauptphase."
+	},
+	"main2": {
+		"name": "Postkampf-Hauptphase",
+		"shortName": "Hauptphase 2",
+		"description": "Deine zweite Hauptphase. Funktioniert genau wie die erste - du kannst Zaubersprüche wirken und (falls noch nicht geschehen) ein Land spielen. Nutze sie, um nach dem Kampf nachzusetzen.",
+		"playerActions": [
+			"Spiele ein Land, falls du es in dieser Runde noch nicht getan hast.",
+			"Wirke Kreaturen-, Hexerei-, Verzauberungs-, Artefakt- oder Planeswalker-Zaubersprüche.",
+			"Wirke Spontanzauber und aktiviere Fähigkeiten."
+		],
+		"tips": [
+			"Oft ein guter Zeitpunkt, um Kreaturen zu spielen, die du vor dem Angreifen nicht tappen wolltest.",
+			"Gib dein verbliebenes Mana hier aus - ungenutztes Mana geht am Zugende verloren."
+		],
+		"priority": "Genau wie in der ersten Hauptphase - du hast Priorität, aber dein Gegner kann auf alles, was du wirkst, mit Spontanzaubern und Fähigkeiten reagieren."
+	},
+	"end-step": {
+		"name": "Abschlussschritt",
+		"shortName": "Abschluss",
+		"description": "Dein Zug ist fast vorbei. Ausgelöste Fähigkeiten mit dem Text \"zu Beginn deines Abschlussschritts\" oder \"am Zugende\" lösen jetzt aus. Dein Gegner kann Spontanzauber wirken.",
+		"playerActions": [
+			"Löse alle \"am Zugende\"- oder \"zu Beginn des Abschlussschritts\"-Auslöser auf.",
+			"Wirke Spontanzauber oder aktiviere Fähigkeiten."
+		],
+		"tips": [
+			"Häufige Auslöser: \"Am Zugende, opfere diese Kreatur\" oder \"Am Zugende, ziehe eine Karte.\"",
+			"Dein Gegner kann hier Spontanzauber wirken - vielleicht hat er genau auf diesen Moment gewartet."
+		],
+		"priority": "Beide Spieler erhalten Priorität. Dein Gegner kann immer noch Spontanzauber wirken! Dies ist ein beliebter Zeitpunkt dafür, da du nach dem Aufräumschritt ablegen musst - dein Gegner möchte vielleicht vorher handeln."
+	},
+	"cleanup": {
+		"name": "Aufräumschritt",
+		"shortName": "Aufräumen",
+		"description": "Der letzte Schritt. Du legst ab bis auf deine maximale Handkartenzahl (normalerweise 7 Karten). Aller Schaden wird von Kreaturen entfernt. \"Bis zum Zugende\"-Effekte laufen ab.",
+		"playerActions": [
+			"Falls du mehr als 7 Handkarten hast, lege auf 7 ab.",
+			"Aller Schaden wird von allen Kreaturen entfernt.",
+			"Effekte, die \"bis zum Zugende\" oder \"in diesem Zug\" andauern, laufen ab."
+		],
+		"tips": [
+			"Wähle sorgfältig, welche Karten du ablegst - du bekommst sie nicht leicht zurück.",
+			"Schaden verfällt beim Aufräumen - eine 2/2, die 1 Schaden erhalten hat, ist für den Zug deines Gegners vollständig geheilt."
+		],
+		"priority": "Normalerweise wird hier keine Priorität vergeben. Falls jedoch eine ausgelöste Fähigkeit während des Aufräumschritts auf den Stapel kommt, erhalten beide Spieler Priorität, um darauf zu reagieren, bevor sie aufgelöst wird."
+	},
+	"beginning": {
+		"name": "Anfangsphase",
+		"shortName": "Start",
+		"description": "Dein Zug beginnt. Zuerst enttappst du automatisch alle deine bleibenden Karten. Dann bearbeitest du alle Verpflichtungsauslöser auf deinen Karten. Schließlich ziehst du eine Karte von deiner Bibliothek.",
+		"playerActions": [
+			"Enttappe alle deine bleibenden Karten (automatisch - du musst nichts tun).",
+			"Löse alle \"zu Beginn deines Verpflichtungsschritts\"-Auslöser auf.",
+			"Ziehe eine Karte von deiner Bibliothek."
+		],
+		"tips": [
+			"Lies deine Karten - viele haben Verpflichtungsauslöser, die man leicht vergisst.",
+			"Der erste Spieler überspringt in Runde 1 den Ziehschritt.",
+			"Dein Gegner kann während des Verpflichtungsschritts und nach deinem Ziehen Spontanzauber wirken."
+		],
+		"priority": "Der Enttappschritt hat keine Priorität - er ist automatisch. Während des Verpflichtungsschritts und nach deinem Ziehen können beide Spieler Spontanzauber wirken und Fähigkeiten aktivieren. Du gehst zuerst."
+	},
+	"precombat-main": {
+		"name": "Präkampf-Hauptphase",
+		"shortName": "Hauptphase 1",
+		"description": "Deine erste Hauptphase. Du kannst ein Land spielen und Zaubersprüche wirken. Die meisten Spieler wirken ihre wichtigsten Zaubersprüche hier, bevor sie wissen, wie der Kampf verlaufen wird.",
+		"playerActions": [
+			"Spiele ein Land aus deiner Hand (insgesamt einmal pro Runde, gemeinsam mit Hauptphase 2).",
+			"Wirke Kreaturen, Hexereien, Verzauberungen, Artefakte und Planeswalkers.",
+			"Wirke Spontanzauber und aktiviere Fähigkeiten."
+		],
+		"tips": [
+			"Ein Land pro Runde - überlege gut, welches du spielst.",
+			"Hexereien können nur während deiner Hauptphase gewirkt werden, wenn nichts anderes auf dem Stapel liegt."
+		],
+		"priority": "Du hast zuerst Priorität. Nach jedem Zauberspruch, den du wirkst, hat dein Gegner die Möglichkeit zu reagieren, bevor er aufgelöst wird."
+	},
+	"combat": {
+		"name": "Kampfphase",
+		"shortName": "Kampf",
+		"description": "Greife mit deinen Kreaturen an! Dein Gegner kann wählen, welche seiner Kreaturen blocken. Kreaturen verursachen Schaden in Höhe ihrer Stärke. Solche, die Schaden gleich oder größer ihrer Widerstandskraft erhalten, werden zerstört.",
+		"playerActions": [
+			"Wähle, welche enttappten Kreaturen angreifen (sie werden getappt).",
+			"Dein Gegner wählt, wie er deine Angreifer blockt.",
+			"Falls mehrere Kreaturen einen Angreifer blocken, entscheidest du über die Schadensreihenfolge.",
+			"Kreaturen teilen gleichzeitig Schaden in Höhe ihrer Stärke zu."
+		],
+		"tips": [
+			"Kreaturen, die diese Runde ins Spiel gekommen sind, haben Beschworenenerschöpfung - sie können nicht angreifen.",
+			"Dein Gegner muss nicht blocken - er kann den Schaden direkt hinnehmen.",
+			"Fliegende Kreaturen können nur von Fliegern oder Kreaturen mit Reichweite geblockt werden.",
+			"Trampeln lässt überschüssigen Schaden auf den verteidigenden Spieler übertragen, wenn geblockt wird."
+		],
+		"priority": "Priorität wird während des Kampfes mehrmals weitergegeben: vor der Angreifer-Deklaration, nach den Angreifern, nach den Blockern und nach dem Schaden. Dein Gegner kann bei jedem dieser Momente Spontanzauber und Fähigkeiten einsetzen - Vorsicht vor Kampftricks!"
+	},
+	"postcombat-main": {
+		"name": "Postkampf-Hauptphase",
+		"shortName": "Hauptphase 2",
+		"description": "Eine zweite Hauptphase nach dem Kampf. Funktioniert genau wie die erste. Ideal, um Kreaturen zu wirken, die du aufgespart hast, oder verbliebenes Mana auszugeben.",
+		"playerActions": [
+			"Spiele ein Land, falls du es in dieser Runde noch nicht getan hast.",
+			"Wirke Kreaturen, Hexereien, Verzauberungen, Artefakte und Planeswalkers.",
+			"Wirke Spontanzauber und aktiviere Fähigkeiten."
+		],
+		"tips": [
+			"Guter Zeitpunkt, um Kreaturen zu spielen, die du nicht vor dem Angreifen tappen wolltest.",
+			"Gib dein verbliebenes Mana hier aus - ungenutztes Mana geht am Zugende verloren."
+		],
+		"priority": "Genau wie in der ersten Hauptphase - du gehst zuerst, aber dein Gegner kann auf alles, was du wirkst, reagieren."
+	},
+	"ending": {
+		"name": "Endphase",
+		"shortName": "Ende",
+		"description": "Dein Zug endet. Löse alle \"am Zugende\"-Auslöser auf, lege dann auf 7 Karten ab, falls nötig. Aller Schaden wird von Kreaturen entfernt und \"bis zum Zugende\"-Effekte laufen ab.",
+		"playerActions": [
+			"Löse \"am Zugende\"-Auslöser auf.",
+			"Lege auf 7 Karten ab, falls du mehr hast.",
+			"Aller Schaden auf Kreaturen wird entfernt (automatisch).",
+			"Alle \"bis zum Zugende\"-Effekte laufen ab (automatisch)."
+		],
+		"tips": [
+			"Überlege sorgfältig, was du ablegst - bedenke, was dein Gegner in seinem Zug tun könnte.",
+			"Dein Gegner kann im Abschlussschritt noch Spontanzauber wirken, bevor der Aufräumschritt beginnt."
+		],
+		"priority": "Während des Abschlussschritts können beide Spieler Spontanzauber wirken und Fähigkeiten einsetzen. Der Aufräumschritt hat normalerweise keine Priorität, es sei denn, eine ausgelöste Fähigkeit löst aus."
+	}
+}

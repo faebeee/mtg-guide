@@ -1,0 +1,23 @@
+{
+  "name": "@mtg-guide/i18n",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "i18next": "^25.0.0",
+    "react-i18next": "^15.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --bg: #0c0e12;
+  --surface: #14161c;
+  --surface-2: #1c1f27;
+  --border: #2a2e3a;
+  --border-bright: #3a3f52;
+  --accent: #c9a84c;
+  --accent-dim: #7a6530;
+  --text: #dde1ec;
+  --text-muted: #7a7e96;
+  --text-dim: #4a4e62;
+  --blue: #5b9cf6;
+  --red: #e05555;
+  --purple: #a07dd6;
+  --green: #5ab87a;
+
+  /* Phase colors */
+  --phase-beginning: #c9a84c;
+  --phase-main: #5b9cf6;
+  --phase-combat: #e05555;
+  --phase-ending: #a07dd6;
+}
+
+@theme inline {
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-border: var(--border);
+  --color-muted: var(--surface-2);
+  --color-muted-foreground: var(--text-muted);
+  --color-accent: var(--accent);
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  background-color: var(--bg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+.font-display {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* Card panels */
+.mtg-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+/* Navigation */
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 150ms ease, background 150ms ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.nav-link.active {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+/* Button styles */
+.btn-primary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #0c0e12;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.88;
+}
+
+.btn-primary:active {
+  opacity: 0.75;
+}
+
+/* Keep old class name as alias for compatibility */
+.btn-gold {
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #0c0e12;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.btn-gold:hover {
+  opacity: 0.88;
+}
+
+.btn-gold:active {
+  opacity: 0.75;
+}
+
+.btn-ghost {
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+
+.btn-ghost:hover {
+  color: var(--text);
+  border-color: var(--border-bright);
+  background: var(--surface-2);
+}
+
+.btn-ghost:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Toggle */
+.toggle-pill {
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.toggle-option {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.toggle-option.active {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+/* Animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fade-up 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fade-in 200ms ease both;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-bright);
+  border-radius: 999px;
+}
+
+/* Input styles */
+.mtg-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+
+.mtg-input:focus {
+  border-color: var(--border-bright);
+}
+
+.mtg-input::placeholder {
+  color: var(--text-dim);
+}
+
+/* Phase progress dots */
+.phase-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border-bright);
+  background: transparent;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.phase-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  width: 20px;
+}
+
+.phase-dot.completed {
+  background: var(--accent-dim);
+  border-color: var(--accent-dim);
+}
+
+/* Priority callout */
+.priority-callout {
+  background: rgba(91, 156, 246, 0.06);
+  border: 1px solid rgba(91, 156, 246, 0.18);
+  border-left: 3px solid rgba(91, 156, 246, 0.5);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Keyword chip */
+.keyword-chip {
+  display: inline-block;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: all 120ms ease;
+  text-decoration: none;
+}
+
+.keyword-chip:hover {
+  border-color: var(--border-bright);
+  color: var(--text);
+}
+
+/* Page layout */
+.page-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Full-width phase card */
+.phase-card-full {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.75rem 1.5rem 1.5rem;
+}
+
+@media (min-width: 641px) {
+  .phase-card-full {
+    max-width: 860px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+}
+
+/* ─── Mobile / Responsive ───────────────────────────────────────────────── */
+
+/* Bottom tab bar — mobile only */
+.bottom-tab-bar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  /* Show bottom tab bar */
+  .bottom-tab-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(12, 14, 18, 0.97);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(16px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .bottom-tab-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 10px 0 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 150ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .bottom-tab-item .tab-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .bottom-tab-item .tab-label {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    transition: color 150ms ease;
+  }
+
+  .bottom-tab-item.active .tab-label {
+    color: var(--text);
+  }
+
+  .bottom-tab-item:active {
+    opacity: 0.7;
+  }
+
+  /* Hide top nav links on mobile — only show logo */
+  .top-nav-links {
+    display: none;
+  }
+
+  /* Add bottom padding for fixed tab bar + safe area */
+  .mobile-bottom-padding {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Reduce page top padding on mobile */
+  .page-container {
+    padding: 0 0.75rem;
+  }
+
+  /* Smaller page heading on mobile */
+  .page-heading {
+    font-size: 1.4rem !important;
+  }
+
+  /* Card padding: reduce horizontal padding on mobile */
+  .mtg-card-inner {
+    padding: 1.25rem 1rem 1rem !important;
+  }
+
+  /* Sticky prev/next bar on mobile — sits above tab bar */
+  .wizard-nav-bar {
+    position: fixed;
+    bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+    left: 0;
+    right: 0;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    padding: 8px 12px;
+    background: rgba(12, 14, 18, 0.96);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+  }
+
+  .wizard-nav-bar .btn-ghost,
+  .wizard-nav-bar .btn-gold {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 12px;
+    font-size: 0.8rem;
+  }
+
+  .wizard-nav-bar .btn-ghost {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+  }
+
+  .wizard-nav-bar .btn-gold {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .wizard-nav-bar .phase-label {
+    flex: 0 0 auto;
+    padding: 0 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Add bottom padding to main content when on wizard page */
+  .wizard-bottom-space {
+    height: calc(128px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Larger touch targets */
+  .phase-dot {
+    width: 10px;
+    height: 10px;
+    min-width: 28px;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Phase dot inner visual */
+  .phase-dot::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border-bright);
+    background: transparent;
+    transition: all 200ms ease;
+  }
+
+  .phase-dot.active::after {
+    width: 20px;
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .phase-dot.completed::after {
+    background: var(--accent-dim);
+    border-color: var(--accent-dim);
+  }
+
+  /* Keyword chips — wrap properly */
+  .keywords-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+
+  /* Larger glossary term buttons */
+  .term-toggle-btn {
+    padding: 14px 16px !important;
+    min-height: 52px;
+  }
+
+  /* Input font-size 16px prevents iOS zoom on focus */
+  .mtg-input {
+    font-size: 16px;
+  }
+
+  /* Top nav: compact on mobile */
+  .top-nav-header {
+    padding: 10px 0.75rem !important;
+  }
+}
+
+/* Desktop: hide bottom tab bar elements */
+@media (min-width: 641px) {
+  .bottom-tab-bar {
+    display: none;
+  }
+
+  /* Desktop wizard nav is inline */
+  .wizard-nav-bar {
+    position: static;
+    background: transparent;
+    border: none;
+    backdrop-filter: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+
+  .wizard-nav-bar .btn-ghost {
+    min-width: 120px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+
+  .wizard-nav-bar .btn-gold {
+    min-width: 120px;
+    border-radius: 8px;
+  }
+
+  /* Desktop keywords row */
+  .keywords-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+}

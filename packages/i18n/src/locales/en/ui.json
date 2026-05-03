@@ -1,0 +1,40 @@
+{
+	"nav": {
+		"title": "MTG Guide",
+		"turnGuide": "Turn Guide",
+		"glossary": "Glossary",
+		"guide": "Guide"
+	},
+	"guide": {
+		"turn": "Turn {{count}}",
+		"title": "Turn Phase Guide",
+		"subtitle": "Follow along step by step through your turn.",
+		"simplified": "Simplified",
+		"allSteps": "All Steps",
+		"turnBegins": "Turn {{count}} begins",
+		"prev": "← Prev",
+		"next": "Next →",
+		"endTurn": "End Turn →",
+		"stepOf": "Step {{current}} of {{total}}",
+		"whatToDo": "What to do",
+		"tips": "Tips",
+		"priority": "Priority & Opponent Actions",
+		"keywords": "Keywords"
+	},
+	"glossary": {
+		"reference": "Reference",
+		"title": "Glossary",
+		"subtitle": "{{count}} beginner-essential terms explained.",
+		"searchPlaceholder": "Search terms…",
+		"noResults": "No terms found for \"{{query}}\"",
+		"rule": "Rule {{ref}}",
+		"seeAlso": "See also:"
+	},
+	"footer": {
+		"disclaimer": "MTG Guide — A companion for new players. Not affiliated with Wizards of the Coast."
+	},
+	"language": {
+		"de": "DE",
+		"en": "EN"
+	}
+}

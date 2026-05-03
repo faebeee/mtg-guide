@@ -1,0 +1,230 @@
+{
+	"activate": {
+		"term": "Activate",
+		"definition": "To pay the cost of an activated ability and put it on the stack. An activated ability has the format \"[Cost]: [Effect].\" You can activate an ability as long as you can pay the cost."
+	},
+	"activatedAbility": {
+		"term": "Activated Ability",
+		"definition": "An ability of a card that the controller can trigger by paying a cost. They are written in the format \"[Cost]: [Effect].\" For example, \"{T}: Add {G}\" means tap this permanent to add one green mana."
+	},
+	"artifact": {
+		"term": "Artifact",
+		"definition": "A card type representing objects, devices, and constructs. Artifacts are usually colorless and remain on the battlefield until destroyed. Equipment and vehicles are subtypes of artifacts."
+	},
+	"attack": {
+		"term": "Attack",
+		"definition": "To send a creature into combat against an opponent or planeswalker during the Declare Attackers step. Attacking creatures are tapped (unless they have vigilance)."
+	},
+	"block": {
+		"term": "Block",
+		"definition": "To assign a creature to intercept an attacking creature during the Declare Blockers step. A blocker must be untapped. Blocked creatures deal damage to each other instead of to the defending player."
+	},
+	"cardTypes": {
+		"term": "Card Types",
+		"definition": "Every card in Magic belongs to one or more types: Land, Creature, Instant, Sorcery, Enchantment, Artifact, Planeswalker, or Tribal. The card type determines when and how the card can be played and what rules apply to it."
+	},
+	"cast": {
+		"term": "Cast",
+		"definition": "To play a spell by announcing it, choosing targets, and paying its mana cost. A spell is on the stack until it resolves or is countered."
+	},
+	"combat": {
+		"term": "Combat",
+		"definition": "The third phase of a turn, consisting of five steps: Beginning of Combat, Declare Attackers, Declare Blockers, Combat Damage, and End of Combat. During combat, players can attack with creatures and defend with blockers."
+	},
+	"combatDamage": {
+		"term": "Combat Damage",
+		"definition": "Damage dealt by creatures in combat. Each creature deals damage equal to its power. Creatures that receive lethal damage (damage equal to or greater than their toughness) are destroyed."
+	},
+	"counterASpell": {
+		"term": "Counter (a spell)",
+		"definition": "To stop a spell from resolving by removing it from the stack and putting it directly into its owner's graveyard. The word \"counter\" in this context means to cancel a spell."
+	},
+	"counterOnAPermanent": {
+		"term": "Counter (on a permanent)",
+		"definition": "A marker placed on a permanent to track certain effects. +1/+1 counters increase a creature's power and toughness. -1/-1 counters decrease them. Loyalty counters track a planeswalker's loyalty."
+	},
+	"creature": {
+		"term": "Creature",
+		"definition": "A card type representing beings that fight for you. Creatures have power (attack strength) and toughness (defense strength). They can attack and block. Creatures have summoning sickness when they first enter the battlefield."
+	},
+	"deathtouch": {
+		"term": "Deathtouch",
+		"definition": "A keyword ability. Any amount of damage dealt by a creature with deathtouch is enough to destroy any other creature it damages, regardless of that creature's toughness."
+	},
+	"defender": {
+		"term": "Defender",
+		"definition": "A keyword ability that prevents a creature from attacking. Creatures with defender can still block."
+	},
+	"destroy": {
+		"term": "Destroy",
+		"definition": "To move a permanent from the battlefield to its owner's graveyard. Some creatures have \"indestructible\" which prevents them from being destroyed this way."
+	},
+	"doubleStrike": {
+		"term": "Double Strike",
+		"definition": "A keyword ability. A creature with double strike deals damage in both the first strike damage step and the regular combat damage step."
+	},
+	"draw": {
+		"term": "Draw",
+		"definition": "To take the top card of your library and add it to your hand. You draw one card at the start of your turn during the Draw Step."
+	},
+	"enchantment": {
+		"term": "Enchantment",
+		"definition": "A card type representing persistent magical effects. Enchantments stay on the battlefield until removed. Auras are enchantments that attach to a specific permanent."
+	},
+	"equip": {
+		"term": "Equip",
+		"definition": "An activated ability on Equipment cards. Paying the equip cost attaches the Equipment to a creature you control. Equip can only be used at sorcery speed (during your main phase when the stack is empty)."
+	},
+	"exile": {
+		"term": "Exile",
+		"definition": "A zone removed from the game. Exiled cards are set aside and cannot normally interact with the game. Unlike the graveyard, exiled cards are generally not accessible."
+	},
+	"firstStrike": {
+		"term": "First Strike",
+		"definition": "A keyword ability. Creatures with first strike deal their combat damage before creatures without first strike. If the creature they're fighting dies to first strike damage, it never gets to deal damage back."
+	},
+	"flash": {
+		"term": "Flash",
+		"definition": "A keyword ability. A card with flash can be cast at any time you could cast an instant — including during your opponent's turn and in response to other spells and abilities."
+	},
+	"flying": {
+		"term": "Flying",
+		"definition": "A keyword ability. A creature with flying can only be blocked by creatures that also have flying or reach. It can freely attack \"over\" ground creatures."
+	},
+	"graveyard": {
+		"term": "Graveyard",
+		"definition": "A zone where destroyed, sacrificed, discarded, and countered cards go. Each player has their own graveyard. Cards in graveyards can sometimes be retrieved by spells and abilities."
+	},
+	"hand": {
+		"term": "Hand",
+		"definition": "The zone where cards you are holding go. You normally start with 7 cards. At the end of your turn, if you have more than 7 cards in hand, you must discard down to 7 (your maximum hand size)."
+	},
+	"haste": {
+		"term": "Haste",
+		"definition": "A keyword ability. Creatures with haste can attack and use tap abilities the turn they enter the battlefield, ignoring summoning sickness."
+	},
+	"hexproof": {
+		"term": "Hexproof",
+		"definition": "A keyword ability. A permanent or player with hexproof cannot be the target of spells or abilities your opponents control. You can still target your own hexproof permanents."
+	},
+	"indestructible": {
+		"term": "Indestructible",
+		"definition": "A keyword ability. A permanent with indestructible cannot be destroyed by damage or by effects that say \"destroy.\" It can still be exiled, bounced, sacrificed, or have its toughness reduced to 0."
+	},
+	"instant": {
+		"term": "Instant",
+		"definition": "A card type that can be cast at almost any time — during your turn, your opponent's turn, or in response to other spells and abilities. Instants resolve and go to the graveyard."
+	},
+	"land": {
+		"term": "Land",
+		"definition": "A card type that produces mana. You can play one land per turn during your main phase. Lands are not cast as spells — they are played directly from your hand without using the stack."
+	},
+	"library": {
+		"term": "Library",
+		"definition": "Your deck during a game. Cards are drawn from the top of your library. If you need to draw a card but your library is empty, you lose the game."
+	},
+	"lifelink": {
+		"term": "Lifelink",
+		"definition": "A keyword ability. Damage dealt by a creature with lifelink also causes its controller to gain that much life."
+	},
+	"mana": {
+		"term": "Mana",
+		"definition": "The resource used to pay for spells and abilities. There are five colors of mana (White, Blue, Black, Red, Green) and colorless mana. Mana is produced by tapping lands and other permanents."
+	},
+	"manaCost": {
+		"term": "Mana Cost",
+		"definition": "The cost in mana required to cast a spell, shown in the upper right corner of a card. Includes colored mana symbols and/or generic mana (numbers representing any color)."
+	},
+	"menace": {
+		"term": "Menace",
+		"definition": "A keyword ability. A creature with menace can only be blocked by two or more creatures at once."
+	},
+	"permanent": {
+		"term": "Permanent",
+		"definition": "Any card on the battlefield: creatures, lands, artifacts, enchantments, and planeswalkers are all permanents. Instants and sorceries are not permanents — they go to the graveyard after resolving."
+	},
+	"planeswalker": {
+		"term": "Planeswalker",
+		"definition": "A card type representing powerful allies. Planeswalkers enter the battlefield with a set number of loyalty counters. Each turn you can use one of their loyalty abilities (add or subtract loyalty). When their loyalty reaches 0, they are destroyed."
+	},
+	"power": {
+		"term": "Power",
+		"definition": "The first number in a creature's power/toughness box (e.g., 2 in \"2/3\"). Power determines how much combat damage a creature deals."
+	},
+	"priority": {
+		"term": "Priority",
+		"definition": "The right to cast spells and activate abilities. The active player (whose turn it is) gets priority first at the start of each step. After you pass priority and your opponent passes it back without acting, the top spell or ability on the stack resolves."
+	},
+	"prowess": {
+		"term": "Prowess",
+		"definition": "A triggered ability. Whenever you cast a noncreature spell, creatures with prowess get +1/+1 until end of turn."
+	},
+	"reach": {
+		"term": "Reach",
+		"definition": "A keyword ability. A creature with reach can block creatures with flying, even though the reach creature itself doesn't have flying."
+	},
+	"regenerate": {
+		"term": "Regenerate",
+		"definition": "An older keyword. To regenerate a creature means to pay a cost so that the next time the creature would be destroyed this turn, it instead taps, removes all damage, and stays on the battlefield."
+	},
+	"resolve": {
+		"term": "Resolve",
+		"definition": "When a spell or ability finishes being processed. A spell resolves when all players have passed priority without responding. Spells go to the graveyard after resolving (unless they create a permanent)."
+	},
+	"sacrifice": {
+		"term": "Sacrifice",
+		"definition": "To move a permanent you control from the battlefield to the graveyard as a cost or effect. Unlike destroy, sacrifice cannot be prevented by indestructible."
+	},
+	"scry": {
+		"term": "Scry",
+		"definition": "A keyword action. \"Scry N\" means look at the top N cards of your library. You may put any of them on the bottom of your library in any order. The rest stay on top in any order."
+	},
+	"sorcery": {
+		"term": "Sorcery",
+		"definition": "A card type similar to an instant, but with a restriction: sorceries can only be cast during your own main phase, when the stack is empty. They resolve and go to the graveyard."
+	},
+	"stack": {
+		"term": "Stack",
+		"definition": "A zone where spells and abilities wait to resolve. When you cast a spell, it goes on the stack. Players can respond before the top of the stack resolves. Spells and abilities resolve in last-in, first-out order."
+	},
+	"summoningSickness": {
+		"term": "Summoning Sickness",
+		"definition": "An informal term for the rule that creatures cannot attack or use tap abilities the turn they enter the battlefield, unless they have haste. The creature can still block."
+	},
+	"tap": {
+		"term": "Tap",
+		"definition": "To turn a permanent sideways to show it has been used. Tapping is the most common cost for activating abilities and for attacking. Tapped permanents cannot tap again until untapped (usually during your untap step)."
+	},
+	"target": {
+		"term": "Target",
+		"definition": "To choose a specific game object or player for a spell or ability to affect. A target must be legal at the time the spell is cast AND when it resolves. If a target becomes illegal, the spell may fizzle."
+	},
+	"token": {
+		"term": "Token",
+		"definition": "A permanent created by a spell or ability that is not a card from a player's deck. Tokens are creatures (or other permanents) that exist only on the battlefield — they cease to exist if they leave the battlefield."
+	},
+	"toughness": {
+		"term": "Toughness",
+		"definition": "The second number in a creature's power/toughness box (e.g., 3 in \"2/3\"). A creature is destroyed when it receives damage equal to or greater than its toughness."
+	},
+	"trample": {
+		"term": "Trample",
+		"definition": "A keyword ability. If a creature with trample is blocked, it only needs to assign lethal damage to each blocker. Any remaining damage \"tramples\" over to the defending player."
+	},
+	"triggeredAbility": {
+		"term": "Triggered Ability",
+		"definition": "An ability that automatically triggers when a specific condition is met. They always start with \"when,\" \"whenever,\" or \"at.\" When the trigger condition occurs, the ability is placed on the stack."
+	},
+	"untap": {
+		"term": "Untap",
+		"definition": "To rotate a tapped permanent back to its upright position, making it available to use again. You untap all your permanents at the beginning of your turn during the Untap Step."
+	},
+	"vigilance": {
+		"term": "Vigilance",
+		"definition": "A keyword ability. Creatures with vigilance do not tap when they attack. They can attack and still be available to block on your opponent's turn."
+	},
+	"zone": {
+		"term": "Zone",
+		"definition": "A distinct area of the game where cards exist. The zones are: Library, Hand, Battlefield, Graveyard, Stack, Exile, and the Command Zone (used in some formats)."
+	}
+}

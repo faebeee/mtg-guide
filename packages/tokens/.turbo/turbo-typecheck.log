@@ -1,0 +1,4 @@
+
+> @mtg-guide/tokens@0.0.1 typecheck
+> tsc --noEmit
+

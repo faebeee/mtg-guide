@@ -1,0 +1,4 @@
+
+> @mtg-guide/i18n@0.0.1 typecheck
+> tsc --noEmit
+

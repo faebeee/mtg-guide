@@ -1,0 +1,230 @@
+{
+	"activate": {
+		"term": "Aktivieren",
+		"definition": "Die Kosten einer aktivierten Fähigkeit bezahlen und sie auf den Stapel legen. Eine aktivierte Fähigkeit hat das Format \"[Kosten]: [Effekt].\" Du kannst eine Fähigkeit aktivieren, solange du die Kosten bezahlen kannst."
+	},
+	"activatedAbility": {
+		"term": "Aktivierte Fähigkeit",
+		"definition": "Eine Fähigkeit einer Karte, die der Kontrolleur durch Bezahlen von Kosten auslösen kann. Sie werden im Format \"[Kosten]: [Effekt]\" geschrieben. Zum Beispiel bedeutet \"{T}: Füge {G} hinzu\", tippe dieses bleibende Permanente, um ein grünes Mana hinzuzufügen."
+	},
+	"artifact": {
+		"term": "Artefakt",
+		"definition": "Ein Kartentyp, der Objekte, Vorrichtungen und Konstrukte repräsentiert. Artefakte sind meist farblos und verbleiben im Spiel, bis sie zerstört werden. Ausrüstungen und Fahrzeuge sind Untertypen von Artefakten."
+	},
+	"attack": {
+		"term": "Angreifen",
+		"definition": "Eine Kreatur während des Angreiferdeklarationsschritts in den Kampf gegen einen Gegner oder Planeswalker schicken. Angreifende Kreaturen werden getappt (sofern sie keine Wachsamkeit haben)."
+	},
+	"block": {
+		"term": "Blocken",
+		"definition": "Eine Kreatur zuweisen, um während des Blockerdeklarationsschritts eine angreifende Kreatur abzufangen. Ein Blocker muss enttappt sein. Geblockte Kreaturen verursachen gegenseitig Schaden statt beim verteidigenden Spieler."
+	},
+	"cardTypes": {
+		"term": "Kartentypen",
+		"definition": "Jede Karte in Magic gehört zu einem oder mehreren Typen: Land, Kreatur, Spontanzauber, Hexerei, Verzauberung, Artefakt, Planeswalker oder Stamm. Der Kartentyp bestimmt, wann und wie die Karte gespielt werden kann und welche Regeln für sie gelten."
+	},
+	"cast": {
+		"term": "Wirken",
+		"definition": "Einen Zauberspruch spielen, indem man ihn ankündigt, Ziele wählt und seine Manakosten bezahlt. Ein Zauberspruch liegt auf dem Stapel, bis er aufgelöst wird oder annulliert wird."
+	},
+	"combat": {
+		"term": "Kampf",
+		"definition": "Die dritte Phase eines Zuges, bestehend aus fünf Schritten: Kampfanfangsschritt, Angreiferdeklarationsschritt, Blockerdeklarationsschritt, Kampfschadensschritt und Kampfendeschritt. Während des Kampfes können Spieler mit Kreaturen angreifen und sich mit Blockern verteidigen."
+	},
+	"combatDamage": {
+		"term": "Kampfschaden",
+		"definition": "Schaden, der von Kreaturen im Kampf verursacht wird. Jede Kreatur verursacht Schaden in Höhe ihrer Stärke. Kreaturen, die tödlichen Schaden erhalten (Schaden gleich oder größer ihrer Widerstandskraft), werden zerstört."
+	},
+	"counterASpell": {
+		"term": "Annullieren (eines Zauberspruchs)",
+		"definition": "Einen Zauberspruch daran hindern, aufgelöst zu werden, indem er vom Stapel entfernt und direkt in den Friedhof seines Eigentümers gelegt wird. Das Wort \"annullieren\" bedeutet in diesem Zusammenhang, einen Zauberspruch abzubrechen."
+	},
+	"counterOnAPermanent": {
+		"term": "Marke (auf einem bleibenden Permanenten)",
+		"definition": "Eine Markierung auf einem bleibenden Permanenten, die bestimmte Effekte verfolgt. +1/+1-Marken erhöhen Stärke und Widerstandskraft einer Kreatur. -1/-1-Marken verringern sie. Loyalitätsmarken verfolgen die Loyalität eines Planeswalkers."
+	},
+	"creature": {
+		"term": "Kreatur",
+		"definition": "Ein Kartentyp, der Wesen repräsentiert, die für dich kämpfen. Kreaturen haben Stärke (Angriffskraft) und Widerstandskraft (Verteidigungskraft). Sie können angreifen und blocken. Kreaturen haben Beschworenenerschöpfung, wenn sie zum ersten Mal ins Spiel kommen."
+	},
+	"deathtouch": {
+		"term": "Todesberührung",
+		"definition": "Eine Stichwortfähigkeit. Jede Schadensquelle von einer Kreatur mit Todesberührung genügt, um jede andere Kreatur zu zerstören, der sie Schaden zufügt, unabhängig von deren Widerstandskraft."
+	},
+	"defender": {
+		"term": "Verteidiger",
+		"definition": "Eine Stichwortfähigkeit, die verhindert, dass eine Kreatur angreift. Kreaturen mit Verteidiger können trotzdem blocken."
+	},
+	"destroy": {
+		"term": "Zerstören",
+		"definition": "Ein bleibendes Permanentes vom Spielfeld in den Friedhof seines Eigentümers bewegen. Manche Kreaturen haben \"Unzerstörbarkeit\", was verhindert, dass sie auf diese Weise zerstört werden."
+	},
+	"doubleStrike": {
+		"term": "Doppelschlag",
+		"definition": "Eine Stichwortfähigkeit. Eine Kreatur mit Doppelschlag teilt sowohl im Erstschlag-Schadenszuteilungsschritt als auch im normalen Kampfschadensschritt Schaden zu."
+	},
+	"draw": {
+		"term": "Ziehen",
+		"definition": "Die oberste Karte der Bibliothek nehmen und zur Hand hinzufügen. Du ziehst zu Beginn deines Zuges eine Karte während des Ziehschritts."
+	},
+	"enchantment": {
+		"term": "Verzauberung",
+		"definition": "Ein Kartentyp, der anhaltende magische Effekte repräsentiert. Verzauberungen verbleiben im Spiel, bis sie entfernt werden. Auren sind Verzauberungen, die an ein bestimmtes bleibendes Permanentes geknüpft werden."
+	},
+	"equip": {
+		"term": "Anlegen",
+		"definition": "Eine aktivierte Fähigkeit auf Ausrüstungskarten. Das Bezahlen der Anlegekosten befestigt die Ausrüstung an eine Kreatur unter deiner Kontrolle. Anlegen kann nur mit Hexerei-Tempo eingesetzt werden (während deiner Hauptphase, wenn der Stapel leer ist)."
+	},
+	"exile": {
+		"term": "Verbannung",
+		"definition": "Eine Zone außerhalb des Spiels. Verbannte Karten werden beiseitegelegt und können normalerweise nicht mit dem Spiel interagieren. Anders als der Friedhof sind verbannte Karten in der Regel nicht zugänglich."
+	},
+	"firstStrike": {
+		"term": "Erstschlag",
+		"definition": "Eine Stichwortfähigkeit. Kreaturen mit Erstschlag teilen ihren Kampfschaden vor Kreaturen ohne Erstschlag zu. Falls die Kreatur, gegen die sie kämpfen, durch Erstschlag-Schaden stirbt, kann sie nie Schaden zurückteilen."
+	},
+	"flash": {
+		"term": "Blitz",
+		"definition": "Eine Stichwortfähigkeit. Eine Karte mit Blitz kann jederzeit gewirkt werden, wenn du einen Spontanzauber wirken könntest - auch während des Zuges deines Gegners und als Reaktion auf andere Zaubersprüche und Fähigkeiten."
+	},
+	"flying": {
+		"term": "Fliegen",
+		"definition": "Eine Stichwortfähigkeit. Eine Kreatur mit Fliegen kann nur von Kreaturen geblockt werden, die ebenfalls Fliegen oder Reichweite haben. Sie kann Bodenkreaturen frei angreifen."
+	},
+	"graveyard": {
+		"term": "Friedhof",
+		"definition": "Eine Zone, in die zerstörte, geopferte, abgelegte und annullierte Karten wandern. Jeder Spieler hat seinen eigenen Friedhof. Karten auf Friedhöfen können manchmal durch Zaubersprüche und Fähigkeiten zurückgeholt werden."
+	},
+	"hand": {
+		"term": "Hand",
+		"definition": "Die Zone, in der sich die Karten befinden, die du hältst. Normalerweise beginnst du mit 7 Karten. Am Ende deines Zuges musst du, wenn du mehr als 7 Karten auf der Hand hast, auf 7 ablegen (deine maximale Handkartenzahl)."
+	},
+	"haste": {
+		"term": "Eile",
+		"definition": "Eine Stichwortfähigkeit. Kreaturen mit Eile können in der Runde, in der sie ins Spiel kommen, angreifen und Tapp-Fähigkeiten nutzen, ohne Beschworenenerschöpfung zu beachten."
+	},
+	"hexproof": {
+		"term": "Hexensicherheit",
+		"definition": "Eine Stichwortfähigkeit. Ein bleibendes Permanentes oder Spieler mit Hexensicherheit kann nicht Ziel von Zaubern oder Fähigkeiten sein, die deine Gegner kontrollieren. Du kannst deine eigenen Permanenten mit Hexensicherheit weiterhin zum Ziel machen."
+	},
+	"indestructible": {
+		"term": "Unzerstörbarkeit",
+		"definition": "Eine Stichwortfähigkeit. Ein bleibendes Permanentes mit Unzerstörbarkeit kann nicht durch Schaden oder durch Effekte mit \"zerstöre\" zerstört werden. Es kann dennoch verbannt, zurückgespielt, geopfert oder seine Widerstandskraft auf 0 reduziert werden."
+	},
+	"instant": {
+		"term": "Spontanzauber",
+		"definition": "Ein Kartentyp, der fast jederzeit gewirkt werden kann - während deines Zuges, dem Zug deines Gegners oder als Reaktion auf andere Zaubersprüche und Fähigkeiten. Spontanzauber werden aufgelöst und wandern in den Friedhof."
+	},
+	"land": {
+		"term": "Land",
+		"definition": "Ein Kartentyp, der Mana erzeugt. Du kannst einmal pro Runde ein Land während deiner Hauptphase spielen. Länder werden nicht als Zaubersprüche gewirkt - sie werden direkt aus deiner Hand gespielt, ohne den Stapel zu benutzen."
+	},
+	"library": {
+		"term": "Bibliothek",
+		"definition": "Dein Deck während eines Spiels. Karten werden vom oberen Ende deiner Bibliothek gezogen. Falls du eine Karte ziehen musst, deine Bibliothek aber leer ist, verlierst du das Spiel."
+	},
+	"lifelink": {
+		"term": "Lebensband",
+		"definition": "Eine Stichwortfähigkeit. Schaden, den eine Kreatur mit Lebensband verursacht, lässt ihren Kontrolleur gleichzeitig um diesen Betrag Lebenspunkte gewinnen."
+	},
+	"mana": {
+		"term": "Mana",
+		"definition": "Die Ressource, die verwendet wird, um Zaubersprüche und Fähigkeiten zu bezahlen. Es gibt fünf Manafarben (Weiß, Blau, Schwarz, Rot, Grün) und farbloses Mana. Mana wird durch Tappen von Ländern und anderen bleibenden Permanenten erzeugt."
+	},
+	"manaCost": {
+		"term": "Manakosten",
+		"definition": "Die Manakosten, die zum Wirken eines Zaubers erforderlich sind, dargestellt in der oberen rechten Ecke einer Karte. Beinhaltet farbige Manasymbole und/oder generisches Mana (Zahlen, die beliebige Farben repräsentieren)."
+	},
+	"menace": {
+		"term": "Drohung",
+		"definition": "Eine Stichwortfähigkeit. Eine Kreatur mit Drohung kann nur von zwei oder mehr Kreaturen gleichzeitig geblockt werden."
+	},
+	"permanent": {
+		"term": "Bleibendes Permanentes",
+		"definition": "Jede Karte im Spiel: Kreaturen, Länder, Artefakte, Verzauberungen und Planeswalkers sind alle bleibende Permanente. Spontanzauber und Hexereien sind keine bleibenden Permanenten - sie wandern nach dem Auflösen in den Friedhof."
+	},
+	"planeswalker": {
+		"term": "Planeswalker",
+		"definition": "Ein Kartentyp, der mächtige Verbündete repräsentiert. Planeswalkers kommen mit einer bestimmten Anzahl an Loyalitätsmarken ins Spiel. Jede Runde kannst du eine ihrer Loyalitätsfähigkeiten nutzen (Loyalität hinzufügen oder abziehen). Wenn ihre Loyalität 0 erreicht, werden sie zerstört."
+	},
+	"power": {
+		"term": "Stärke",
+		"definition": "Die erste Zahl im Stärke/Widerstandskraft-Feld einer Kreatur (z.B. 2 bei \"2/3\"). Die Stärke bestimmt, wie viel Kampfschaden eine Kreatur verursacht."
+	},
+	"priority": {
+		"term": "Priorität",
+		"definition": "Das Recht, Zaubersprüche zu wirken und Fähigkeiten zu aktivieren. Der aktive Spieler (derjenige, der am Zug ist) erhält zu Beginn jedes Schritts zuerst Priorität. Nachdem du Priorität abgegeben hast und dein Gegner sie ohne Aktion zurückgibt, wird der oberste Zauber oder die oberste Fähigkeit auf dem Stapel aufgelöst."
+	},
+	"prowess": {
+		"term": "Gewandtheit",
+		"definition": "Eine ausgelöste Fähigkeit. Wann immer du einen Nichtkreaturenzauber wirkst, erhalten Kreaturen mit Gewandtheit bis zum Zugende +1/+1."
+	},
+	"reach": {
+		"term": "Reichweite",
+		"definition": "Eine Stichwortfähigkeit. Eine Kreatur mit Reichweite kann Kreaturen mit Fliegen blocken, auch wenn die Kreatur mit Reichweite selbst kein Fliegen hat."
+	},
+	"regenerate": {
+		"term": "Regenerieren",
+		"definition": "Ein älteres Stichwort. Eine Kreatur zu regenerieren bedeutet, Kosten zu bezahlen, damit die Kreatur, wenn sie in diesem Zug das nächste Mal zerstört werden würde, stattdessen tappt, allen Schaden entfernt und im Spiel bleibt."
+	},
+	"resolve": {
+		"term": "Auflösen",
+		"definition": "Wenn ein Zauberspruch oder eine Fähigkeit fertig verarbeitet wird. Ein Zauberspruch wird aufgelöst, wenn alle Spieler Priorität abgegeben haben, ohne zu reagieren. Zaubersprüche wandern nach dem Auflösen in den Friedhof (sofern sie kein bleibendes Permanentes erschaffen)."
+	},
+	"sacrifice": {
+		"term": "Opfern",
+		"definition": "Ein bleibendes Permanentes, das du kontrollierst, als Kosten oder Effekt vom Spielfeld in den Friedhof bewegen. Anders als zerstören kann Opfern nicht durch Unzerstörbarkeit verhindert werden."
+	},
+	"scry": {
+		"term": "Kristallkugel",
+		"definition": "Eine Stichwortaktion. \"Kristallkugel N\" bedeutet, schaue die obersten N Karten deiner Bibliothek an. Du kannst beliebige davon in beliebiger Reihenfolge unten an deine Bibliothek legen. Der Rest bleibt in beliebiger Reihenfolge oben."
+	},
+	"sorcery": {
+		"term": "Hexerei",
+		"definition": "Ein Kartentyp ähnlich einem Spontanzauber, aber mit einer Einschränkung: Hexereien können nur während der eigenen Hauptphase gewirkt werden, wenn der Stapel leer ist. Sie werden aufgelöst und wandern in den Friedhof."
+	},
+	"stack": {
+		"term": "Stapel",
+		"definition": "Eine Zone, in der Zaubersprüche und Fähigkeiten auf ihre Auflösung warten. Wenn du einen Zauberspruch wirkst, kommt er auf den Stapel. Spieler können reagieren, bevor das Oberste des Stapels aufgelöst wird. Zaubersprüche und Fähigkeiten werden in der Reihenfolge Letzter-hinein-Erster-heraus aufgelöst."
+	},
+	"summoningSickness": {
+		"term": "Beschworenenerschöpfung",
+		"definition": "Ein informeller Begriff für die Regel, dass Kreaturen nicht angreifen oder Tapp-Fähigkeiten nutzen können, in der Runde in der sie ins Spiel gekommen sind, es sei denn, sie haben Eile. Die Kreatur kann trotzdem blocken."
+	},
+	"tap": {
+		"term": "Tappen",
+		"definition": "Ein bleibendes Permanentes seitwärts drehen, um anzuzeigen, dass es benutzt wurde. Tappen ist die häufigste Kosten für das Aktivieren von Fähigkeiten und für das Angreifen. Getappte Permanente können nicht erneut getappt werden, bis sie enttappt werden (normalerweise während des Enttappschritts)."
+	},
+	"target": {
+		"term": "Ziel",
+		"definition": "Ein bestimmtes Spielobjekt oder einen Spieler für einen Zauberspruch oder eine Fähigkeit auswählen. Ein Ziel muss sowohl beim Wirken des Zaubers als auch bei seiner Auflösung zulässig sein. Wenn ein Ziel unzulässig wird, kann der Zauber verpuffen."
+	},
+	"token": {
+		"term": "Spielstein",
+		"definition": "Ein bleibendes Permanentes, das durch einen Zauberspruch oder eine Fähigkeit erschaffen wird und keine Karte aus dem Deck eines Spielers ist. Spielsteine sind Kreaturen (oder andere bleibende Permanente), die nur im Spiel existieren - sie hören auf zu existieren, wenn sie das Spielfeld verlassen."
+	},
+	"toughness": {
+		"term": "Widerstandskraft",
+		"definition": "Die zweite Zahl im Stärke/Widerstandskraft-Feld einer Kreatur (z.B. 3 bei \"2/3\"). Eine Kreatur wird zerstört, wenn sie Schaden gleich oder größer ihrer Widerstandskraft erhält."
+	},
+	"trample": {
+		"term": "Trampeln",
+		"definition": "Eine Stichwortfähigkeit. Wenn eine Kreatur mit Trampeln geblockt wird, muss sie nur jedem Blocker tödlichen Schaden zuteilen. Jeder verbleibende Schaden \"trampelt\" auf den verteidigenden Spieler über."
+	},
+	"triggeredAbility": {
+		"term": "Ausgelöste Fähigkeit",
+		"definition": "Eine Fähigkeit, die automatisch auslöst, wenn eine bestimmte Bedingung erfüllt wird. Sie beginnen immer mit \"falls\", \"immer wenn\" oder \"zu Beginn\". Wenn die Auslösebedingung eintritt, wird die Fähigkeit auf den Stapel gelegt."
+	},
+	"untap": {
+		"term": "Enttappen",
+		"definition": "Ein getapptes bleibendes Permanentes in seine aufrechte Position zurückdrehen, damit es wieder verwendet werden kann. Du enttappst alle deine bleibenden Permanenten zu Beginn deines Zuges während des Enttappschritts."
+	},
+	"vigilance": {
+		"term": "Wachsamkeit",
+		"definition": "Eine Stichwortfähigkeit. Kreaturen mit Wachsamkeit werden beim Angreifen nicht getappt. Sie können angreifen und sind im Zug des Gegners immer noch zum Blocken verfügbar."
+	},
+	"zone": {
+		"term": "Zone",
+		"definition": "Ein bestimmter Bereich des Spiels, in dem Karten existieren. Die Zonen sind: Bibliothek, Hand, Spielfeld, Friedhof, Stapel, Verbannung und die Kommandozone (wird in manchen Formaten verwendet)."
+	}
+}
