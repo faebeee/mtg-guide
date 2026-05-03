@@ -7,7 +7,6 @@ import {
   useLocation,
 } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { Analytics } from "@vercel/analytics/next";
 
 import appCss from "../styles.css?url";
 
@@ -221,7 +220,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         </footer>
         <BottomTabBar />
         <Scripts />
-        <Analytics />
       </body>
     </html>
   );
